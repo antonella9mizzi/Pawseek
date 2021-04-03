@@ -1,8 +1,11 @@
+body{
+    width: 100%;
+}
 /* header */
 .header{
 position: absolute;
-width: 1440px;
-height: 82px;
+width: 100%;
+height: 15vh;
 left: 0px;
 top: 0px;
 
@@ -12,14 +15,14 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .iconS{    
 position: absolute;
-width: 44px;
-height: 44px;
-left: 33px;
-top: 19px;
+width: 10vh;
+height: 10vh;
+left: 3vh;
+top: 2vh;
 }
 ul>li{
 position: relative;
-left: 85px;
+left: 6vh;
 display: inline-block;
 padding:10px;
 font-family: Lato;
@@ -31,23 +34,6 @@ text-align: center;
 
 color: #FFFFFF;
 }
-/*main section */
-/*.vector1{
-    position: relative;
-    top: 72px;
-    left:64%;
-    z-index: initial;
-    width: 40%;
-    height: auto;
-}
-.vector2{
-    position: relative;
-    bottom: 10%;
-    right: 50%;
-    z-index: initial;
-    width: 40%;
-    height: auto;
-}*/
 .mainSection{
     background-image: url(../img/mainBackground.png);
     background-repeat: no-repeat;
@@ -57,13 +43,13 @@ color: #FFFFFF;
     display: flex;
     flex-direction: row ;
     justify-content: space-evenly;
-    padding-bottom: 150px;
+    padding-bottom: 25vh;
 }
 .mainImg{
 position: relative;
-width: 39%;
+width: 70vh;
 height: auto;
-top: 100px;
+top: 18vh;
 background: linear-gradient(0deg, rgba(147, 110, 203, 0.45), rgba(147, 110, 203, 0.45));
 }
 .mainBox{
@@ -72,15 +58,16 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-content: center;
-width: 50%;
+width: 75vh;
 height: auto;
-top: 100px;
+top: 18vh;
 background: rgba(187, 209, 154, 0.5);
 }
 .iconXl{
     position: relative;
     align-self: center;
-    width: 50%;
+    top: 3vh;
+    width: 50vh;
     height: auto;
     filter: drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.25));
 }
@@ -128,6 +115,7 @@ color:#936ECB;
     background-image: url(../img/background2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 5vh;
 }
 .cardSContainer{
     display: flex;
@@ -142,30 +130,26 @@ margin: 15px;
 filter: drop-shadow(0px 6.20057px 6.20057px rgba(0, 0, 0, 0.25));
 }
 .croppedImg{
-height: 237.2px;
-width: 274.3px;
+height: 22vh;
+width: 22vh;
 border-radius: 15px 15px 0px 0px ;
 object-fit: cover;
 object-position: 20% 10%;
 }
 .cardBottom{
 position: relative;
-display: grid;
-/*flex-direction: row;
-justify-content: space-around;*/
-grid-template-areas: 
-"mascota button"
-"info info";
-width: 264.3px;
+width: 21vh;
+height: 30vh;
 border-radius: 0px 0px 15px 15px ;
 background-color: white;
-padding-left: 10px;
+padding: 0.65vh;
+margin-bottom: 3vh;
 font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
-font-size: 20px;
-line-height: 30px;
-letter-spacing: 0.775071px;
+font-size: 16px;
+line-height: 12px;
+letter-spacing: 0.7px;
 color: rgba(0, 0, 0, 0.87);
 }
 .nombreMascota{
@@ -277,26 +261,24 @@ justify-items: center;
 justify-content: space-around;
 align-items: center;
 }
-.buttonMascotas{
-grid-area: button;
+.btnInfo{
 position: relative;
-top: 10%;
-margin: 10px;
-width: auto;
-height: 24px;
+margin-bottom: 3vh;
+width: 21vh;
+height: 20px;
 background-color: transparent;
 border: none;
 font-family: Montserrat;
-font-style: normal;
+font-style: bold;
 font-weight: 400;
-font-size: 12px;
+font-size: 16px;
 line-height: 17px;
 align-items: center;
 justify-self: center;
 letter-spacing: 1.25px;
 text-transform: uppercase;
-color:#936ECB;
+color:white;
 }
-.infoMasco{
-    grid-area: info;
+.cardbtn{
+    display: block;
 }

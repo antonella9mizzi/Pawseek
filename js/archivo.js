@@ -7,7 +7,7 @@ function pedirNumeros (){
 function multiplicar(n1, n2){
     alert("El gasto mensual dedicado a tu/s mascota/s sera de $" + (n1 * n2))
 }
-
+/*
 let nombre = "Chechu"
 let tipoMascota= "Perro"
 let sexo="Hembra"
@@ -164,4 +164,4 @@ function toggle8(){
       } else {
         infoExtra8.style.display = "none";
         }
-}
+}*/
