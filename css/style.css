@@ -1,0 +1,302 @@
+/* header */
+.header{
+position: absolute;
+width: 1440px;
+height: 82px;
+left: 0px;
+top: 0px;
+
+background: #BBD19A;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.iconS{    
+position: absolute;
+width: 44px;
+height: 44px;
+left: 33px;
+top: 19px;
+}
+ul>li{
+position: relative;
+left: 85px;
+display: inline-block;
+padding:10px;
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #FFFFFF;
+}
+/*main section */
+/*.vector1{
+    position: relative;
+    top: 72px;
+    left:64%;
+    z-index: initial;
+    width: 40%;
+    height: auto;
+}
+.vector2{
+    position: relative;
+    bottom: 10%;
+    right: 50%;
+    z-index: initial;
+    width: 40%;
+    height: auto;
+}*/
+.mainSection{
+    background-image: url(../img/mainBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainSectionContainer{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+    padding-bottom: 150px;
+}
+.mainImg{
+position: relative;
+width: 39%;
+height: auto;
+top: 100px;
+background: linear-gradient(0deg, rgba(147, 110, 203, 0.45), rgba(147, 110, 203, 0.45));
+}
+.mainBox{
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+width: 50%;
+height: auto;
+top: 100px;
+background: rgba(187, 209, 154, 0.5);
+}
+.iconXl{
+    position: relative;
+    align-self: center;
+    width: 50%;
+    height: auto;
+    filter: drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.25));
+}
+.containedButton{
+align-self: center;
+width: 351px;
+height: 49.96px;
+background: #B09AD1;
+border: #B09AD1;
+border-radius: 7px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+align-items: center;
+justify-self: center;
+letter-spacing: 1.25px;
+text-transform: uppercase;
+color:white;
+margin: 5px;
+}
+.outlinedButton{
+align-self: center;
+margin: 5px;
+width: 351px;
+height: 49.96px;
+background-color: transparent;
+border: 1px solid #936ECB;
+box-sizing: border-box;
+border-radius: 7px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+align-items: center;
+justify-self: center;
+letter-spacing: 1.25px;
+text-transform: uppercase;
+color:#936ECB;
+}
+/*seccion mascotas */ 
+.sectionMascotas{
+    background-image: url(../img/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cardSContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cardS{
+display: flex;
+flex-direction: column;
+margin: 15px;
+filter: drop-shadow(0px 6.20057px 6.20057px rgba(0, 0, 0, 0.25));
+}
+.croppedImg{
+height: 237.2px;
+width: 274.3px;
+border-radius: 15px 15px 0px 0px ;
+object-fit: cover;
+object-position: 20% 10%;
+}
+.cardBottom{
+position: relative;
+display: grid;
+/*flex-direction: row;
+justify-content: space-around;*/
+grid-template-areas: 
+"mascota button"
+"info info";
+width: 264.3px;
+border-radius: 0px 0px 15px 15px ;
+background-color: white;
+padding-left: 10px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.775071px;
+color: rgba(0, 0, 0, 0.87);
+}
+.nombreMascota{
+    grid-area: mascota;
+}
+.tituloMascotas{
+   display: flex;
+   flex-direction: column;
+   justify-items: space;
+   align-items: center;
+}
+
+/* Textos */
+.headline2{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 63px;
+    line-height: 76px;
+    letter-spacing: -0.5px;
+    margin: 5px;
+    color: #FFFFFF;
+}
+.headline3{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 60px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding-left: 20px;
+
+    color: #404040;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.headline4{
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 43px;
+letter-spacing: 0.25px;
+color: #FFFFFF;
+margin: 5px;
+}
+/* test */
+.backgroundTest{
+    background-image: url(../img/background3.png);
+}
+.test{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 20px;
+letter-spacing: 0.5px;
+
+color: #000000;
+
+}
+.sectionTest{
+    position: absolute;
+    top: 100px;
+    margin: 3%;
+    background-color: #FFFFFF;
+   
+}
+.tipoMascota{
+    margin: 20px
+}
+.sexoMascota{
+    margin: 20px
+}
+.edadMascota{
+    margin: 20px
+}
+.ciudadMascota{
+    margin: 20px
+}
+.buttonEnviar{
+align-self: center;
+width: 351px;
+height: 49.96px;
+background: #B09AD1;
+border: #B09AD1;
+border-radius: 7px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+align-items: center;
+justify-self: center;
+letter-spacing: 1.25px;
+text-transform: uppercase;
+color:white;
+margin: 5px;
+}
+.imgTest{
+width: 35%;
+height: auto;
+ }
+.contentBox{
+display: flex;
+justify-items: center;
+justify-content: space-around;
+align-items: center;
+}
+.buttonMascotas{
+grid-area: button;
+position: relative;
+top: 10%;
+margin: 10px;
+width: auto;
+height: 24px;
+background-color: transparent;
+border: none;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+align-items: center;
+justify-self: center;
+letter-spacing: 1.25px;
+text-transform: uppercase;
+color:#936ECB;
+}
+.infoMasco{
+    grid-area: info;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/archivo.js"></script>
+</head>
+<body class="backgroundTest">
+    <header class="header">
+        <img src="../img/iconS.png" class="iconS">
+        <ul class="textoHeader">
+             <li><a href="../index.html">
+                Home
+            </a></li>
+            <li>
+                Test
+            </li>
+            <li>
+                Mascotas
+            </li>
+        </ul>
+    </header>
+    <section class="sectionTest">
+        <p class="headline3">
+            Realiza nuestro test y descubri el mejor acompañante para vos
+        </p>
+        <div id="quiz" class="contentBox">
+            <form class="test">
+                <div class="tipoMascota">
+                    <label for="mascotas">Elegi tu mascota</label>
+                    <select id="mascotas" name="Tipo de mascota">
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Indistinto">Indistinto</option>
+                    </select>
+                </div> 
+                <div class="sexoMascota">
+                    <p>
+                        Elegi el sexo de tu mascota
+                    </p>
+                    <input type="radio" id="macho" name="sexo" value="macho">
+                    <label for="macho">Macho</label>
+                    <input type="radio" id="hembre" name="sexo" value="hembra">
+                    <label for="hembra">Hembra</label>
+                    <input type="radio" id="indistinto" name="sexo" value="indistinto">
+                    <label for="indistinto">Indistinto</label>
+                </div> 
+                <div class="edadMascota">
+                    <label for="mascotas">Elegi la edad de tu mascota</label> 
+                    <select id="edad" name="Edad de mascota">
+                    <option value="cachorro">Menos de un año</option>
+                    <option value="adulto">Entre uno a cinco años</option>
+                    <option value="senior">Mas de cinco años</option>
+                    </select>
+                </div>
+                <div class="ciudadMascota">
+                    <label for="mascotas">Elegi la ciudad:</label> 
+                    <select id="ciudad" name="Edad de mascota">
+                    <option value="CABA">CABA</option>
+                    <option value="Cordoba">Cordoba</option>
+                    <option value="Rosario">Rosario</option>
+                    </select>
+                </div>
+                <input type="submit" class="buttonEnviar">
+            </form>
+            <img src="../img/imgTest.png" class="imgTest">
+        </div>
+    </section>
+</body>
+</html>
