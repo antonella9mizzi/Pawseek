@@ -11,8 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script defer src="js/archivo.js"></script>
-    <script defer src="js/jquery.js"></script>
+    <script defer src="js/ajax.js"></script>
 </head>
 <body>
     <header class="header">
@@ -52,16 +51,20 @@
                 Y vos, que esperas?
             </p>
         </div>
-        <div  class="cardSContainer">
-            <img src="img/Chechu.jpg" class="croppedImg">
-            <img src="img/Coco.jpg" class="croppedImg">
-            <img src="img/Garfield.jpg" class="croppedImg">
-            <img src="img/Figo.jpg" class="croppedImg">
-            <img src="img/Gala.jpg" class="croppedImg">
-            <img src="img/Kiwi.jpg" class="croppedImg">
-            <img src="img/Jalea.jpg" class="croppedImg">
-            <img src="img/Lola.jpg" class="croppedImg">
-        </div>
+        <div id="cardContainer"></div>
+        <p class="headline4"> 
+                Elegi tu ciudad mas cercana y conoce a las mascotas cerca tuyo
+        </p>
+        <div class="filtro">
+            <input type="radio" id="CABA" name="ciudad" value="CABA">
+            <label for="CABA">CABA</label>
+            <input type="radio" id="cordoba" name="ciudad" value="cordoba">
+            <label for="cordoba">Cordoba</label>
+            <input type="radio" id="rosario" name="ciudad" value="rosario">
+            <label for="rosario">Rosario</label>
+            <input type="radio" id="reset" name="ciudad" value="reset">
+            <label for="reset">Eliminar filtros</label>
+        </div> 
     </section>
 </body>
 </html>

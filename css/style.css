@@ -117,43 +117,45 @@ color:#936ECB;
     background-size: cover;
     padding: 5vh;
 }
-.cardSContainer{
+#cardContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
-.cardS{
-display: flex;
-flex-direction: column;
-margin: 15px;
-filter: drop-shadow(0px 6.20057px 6.20057px rgba(0, 0, 0, 0.25));
+.boxInfo{
+    display: none;
+}
+.cardMasco{
+    margin: 1vh ;
+    width: 25vh;
+    height: fit-content;
+    border-radius: 15px;
+    border-radius: 15px 15px 15px 15px ;
+    background-color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 1vh;
 }
 .croppedImg{
-height: 22vh;
-width: 22vh;
+height: 25vh;
+width: 25vh;
 border-radius: 15px 15px 0px 0px ;
 object-fit: cover;
 object-position: 20% 10%;
 }
-.cardBottom{
-position: relative;
-width: 21vh;
-height: 30vh;
-border-radius: 0px 0px 15px 15px ;
-background-color: white;
-padding: 0.65vh;
-margin-bottom: 3vh;
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 12px;
-letter-spacing: 0.7px;
-color: rgba(0, 0, 0, 0.87);
-}
-.nombreMascota{
-    grid-area: mascota;
+.btn-info{
+    margin-top: 1vh;
+    background-color: transparent;
+    border-color: transparent;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #936ECB;
 }
 .tituloMascotas{
    display: flex;
@@ -161,7 +163,16 @@ color: rgba(0, 0, 0, 0.87);
    justify-items: space;
    align-items: center;
 }
-
+.filtro{
+    display: flex;
+   flex-direction: row;
+   justify-content: left;
+   font-family: Montserrat;
+   font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: white;
+}
 /* Textos */
 .headline2{
     font-family: Lato;

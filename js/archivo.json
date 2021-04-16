@@ -1,0 +1,146 @@
+[
+    {
+        "id":1,
+        "img": "mascoImg/1.jpg",
+        "nombre": "Chechu",
+        "tipoMascota": "Perro",
+        "sexo":"Hembra",
+        "ciudad":"Cordoba",
+        "edad":3
+    },
+    {
+        "id":2,
+        "img": "mascoImg/2.jpg",
+        "nombre": "Coco",
+        "tipoMascota": "Gato",
+        "sexo":"Macho",
+        "ciudad":"Rosario",
+        "edad":1.5  
+    },
+    {
+        "id":3,
+        "img": "mascoImg/3.jpg",
+        "nombre": "Garfield",
+        "tipoMascota": "Gato",
+        "sexo":"Macho",
+        "ciudad":"CABA",
+        "edad":4
+    },
+    {
+        "id":4,
+        "img": "mascoImg/4.jpg",
+        "nombre": "Figo",
+        "tipoMascota": "Perro",
+        "sexo":"Macho",
+        "ciudad":"CABA",
+        "edad":3.5
+    },
+    {
+        "id":5,
+        "img": "mascoImg/5.jpg",
+        "nombre": "Gala",
+        "tipoMascota": "Gato",
+        "sexo":"Hembra",
+        "ciudad":"Rosario",
+        "edad":2.5
+    },
+    {
+        "id":6,
+        "img": "mascoImg/6.jpg",
+        "nombre": "Kiwi",
+        "tipoMascota": "Gato",
+        "sexo":"Macho",
+        "ciudad":"Cordoba",
+        "edad":1.5
+    },
+    {
+        "id":7,
+        "img": "mascoImg/7.jpg",
+        "nombre": "Jalea",
+        "tipoMascota": "Gato",
+        "sexo":"Hembra",
+        "ciudad":"Cordoba",
+        "edad":2
+    },
+    {
+        "id":8,
+        "img": "mascoImg/8.jpg",
+        "nombre": "Lola",
+        "tipoMascota": "Perro",
+        "sexo":"Hembra",
+        "ciudad":"Rosario",
+        "edad":2.5
+    },
+    {
+        "id":9,
+        "img": "mascoImg/9.jpg",
+        "nombre": "Michi",
+        "tipoMascota": "Gato",
+        "sexo":"Macho",
+        "ciudad":"CABA",
+        "edad": 1
+    },
+    {
+        "id":10,
+        "img": "mascoImg/10.jpg",
+        "nombre": "Miel",
+        "tipoMascota": "Gato",
+        "sexo":"Hembra",
+        "ciudad":"Rosario",
+        "edad":0.5
+    },
+    {
+        "id":11,
+        "img": "mascoImg/11.jpg",
+        "nombre": "Paco",
+        "tipoMascota": "Perro",
+        "sexo":"Macho",
+        "ciudad":"Cordoba",
+        "edad":1.5
+    },
+    {
+        "id":12,
+        "img": "mascoImg/12.jpg",
+        "nombre": "Tita",
+        "tipoMascota": "Gato",
+        "sexo":"Hembra",
+        "ciudad":"Cordoba",
+        "edad":1
+    },
+    {
+        "id":13,
+        "img": "mascoImg/13.jpg",
+        "nombre": "Uva",
+        "tipoMascota": "Perro",
+        "sexo":"Hembra",
+        "ciudad":"CABA",
+        "edad":2.5
+    },
+    {
+        "id":14,
+        "img": "mascoImg/14.jpg",
+        "nombre": "Pepito",
+        "tipoMascota": "Gato",
+        "sexo":"Macho",
+        "ciudad":"Rosario",
+        "edad":2
+    },
+    {
+        "id":15,
+        "img": "mascoImg/15.jpg",
+        "nombre": "Tobi",
+        "tipoMascota": "Perro",
+        "sexo":"Macho",
+        "ciudad":"CABA",
+        "edad":0.5
+    },
+    {
+        "id":16,
+        "img": "mascoImg/16.jpg",
+        "nombre": "Dana",
+        "tipoMascota": "Perro",
+        "sexo":"Hembra",
+        "ciudad":"Rosario",
+        "edad":2.5
+    }
+]
