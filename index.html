@@ -11,22 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script defer src="js/ajax.js"></script>
+    <script defer src="js/archivo.js"></script>
 </head>
 <body>
     <header class="header">
-        <img src="img/iconS.png" class="iconS">
+        <a href="index.html"><img src="img/iconS.png" class="iconS"></a>
         <ul class="textoHeader">
-             <li><a href="index.html">
-                Home
-            </a></li>
-            <li>
-                Mascotas
+             <li id="btn-section1"> <!-- Seccion mascotas -->
+                Nuestras mascotas
+            </li>
+            <li id="btn-modal"> <!-- Modal donacion -->
+                Realiza una donacion
             </li>
         </ul>
-        
     </header>
-    <section class="mainSection">
+    <section id="mainSection">
         <div class="mainSectionContainer">
             <img src="img/mainImg.png" class="mainImg">
             <div class="mainBox">
@@ -34,12 +33,23 @@
                 <p id="Titulo" class="headline3">
                     Adopta una mascota. Agranda tu familia
                 </p>
-                <button type="button" onclick="console.table(arrayMascotas)" class="containedButton">Ver tabla de mascotas</button> <!-- aca va: "Descubri tu mascota ideal", se modfica apra desafio.-->
-                <button type="button" onclick="pedirNumeros()" class="outlinedButton">Calcular costos mensuales</button> <!-- aca va: "Conoce nuestras mascotas", se modfica apra desafio.-->
             </div>
         </div>
     </section>
-    <section class="sectionMascotas">
+    <div id="modalDonacion" class="modal">
+        <div class="modalContent">
+          <span class="close"> &times; </span>
+          <p class="headline5">Con $50 podes ayudar a vacunar a una de nuestras mascotas.</p>
+          <p class="texto1">Cuanto queres donar?</p>
+          <input type="number" id="plataDonacion" min="50" value="50" max="100000">
+          <button type="button" onclick=donacion() id="enviarDonacion"> Enviar </button>
+          <div class="resultadoDonacion">
+              <p id="resultadoModal" class="texto1"></p>
+          </div>
+          
+        </div>
+    </div>
+    <section id="section1" class="sectionMascotas">
         <div class="tituloMascotas">
             <p id="textoMascotas" class="headline2">
                 Estas mascotas estan esperando una familia
@@ -48,8 +58,8 @@
                 Y vos, que esperas?
             </p>
         </div>
-        <div id="cardContainer"></div>
-        <p class="headline4"> 
+        
+        <p class="texto1"> 
                 Elegi tu ciudad mas cercana y conoce a las mascotas cerca tuyo
         </p>
         <div class="filtro">
@@ -62,6 +72,10 @@
             <input type="radio" id="reset" name="ciudad" value="reset">
             <label for="reset">Eliminar filtros</label>
         </div> 
+        <div id="cardContainer"></div>
+        <div>
+            <button id="btn-mainSection"type="button">Volver al incio</button>
+        </div>
     </section>
 </body>
 </html>

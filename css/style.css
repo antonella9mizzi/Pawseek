@@ -22,7 +22,8 @@ top: 2vh;
 }
 ul>li{
 position: relative;
-left: 6vh;
+left: 7vh;
+top: 1.8vh;
 display: inline-block;
 padding:10px;
 font-family: Lato;
@@ -34,7 +35,12 @@ text-align: center;
 
 color: #FFFFFF;
 }
-.mainSection{
+ul>li:hover{
+    font-size: 28px;
+    color: #FDAE37;
+    font-weight: bold;
+}
+#mainSection{
     background-image: url(../img/mainBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,6 +56,7 @@ position: relative;
 width: 70vh;
 height: auto;
 top: 18vh;
+border-radius: 5px;
 background: linear-gradient(0deg, rgba(147, 110, 203, 0.45), rgba(147, 110, 203, 0.45));
 }
 .mainBox{
@@ -60,8 +67,10 @@ justify-content: center;
 align-content: center;
 width: 75vh;
 height: auto;
+border-radius: 5px;
 top: 18vh;
-background: rgba(187, 209, 154, 0.5);
+background-color: white;
+/*background: rgba(187, 209, 154, 0.7);*/
 }
 .iconXl{
     position: relative;
@@ -110,9 +119,32 @@ letter-spacing: 1.25px;
 text-transform: uppercase;
 color:#936ECB;
 }
+#btn-mainSection{
+position: relative;
+float: right;
+display: inline-block;
+padding:5px;
+
+background-color: transparent;
+border: none ;
+
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+color: #FDAE37;
+
+}
+#btn-mainSection:hover{
+    font-size: 23px;
+    font-weight: bold;
+}
 /*seccion mascotas */ 
 .sectionMascotas{
-    background-image: url(../img/background2.png);
+    margin-top: 5vh;
+    background-image: url(../img/background3.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5vh;
@@ -141,11 +173,11 @@ color:#936ECB;
     padding-bottom: 1vh;
 }
 .croppedImg{
-height: 25vh;
-width: 25vh;
-border-radius: 15px 15px 0px 0px ;
-object-fit: cover;
-object-position: 20% 10%;
+    height: 25vh;
+    width: 25vh;
+    border-radius: 15px 15px 0px 0px ;
+    object-fit: cover;
+    object-position: 20% 10%;
 }
 .btn-info{
     margin-top: 1vh;
@@ -165,13 +197,14 @@ object-position: 20% 10%;
 }
 .filtro{
     display: flex;
-   flex-direction: row;
-   justify-content: left;
-   font-family: Montserrat;
-   font-style: normal;
+    flex-direction: row;
+    justify-content: left;
+    margin: 1vh;
+    font-family: Montserrat;
+    font-style: normal;
     font-weight: normal;
-    font-size: 17px;
-    color: white;
+    font-size: 16px;
+    color: black;
 }
 /* Textos */
 .headline2{
@@ -182,7 +215,7 @@ object-position: 20% 10%;
     line-height: 76px;
     letter-spacing: -0.5px;
     margin: 5px;
-    color: #FFFFFF;
+    color:black;
 }
 .headline3{
     font-family: Lato;
@@ -197,7 +230,6 @@ object-position: 20% 10%;
 
     color: #404040;
     
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .headline4{
 font-family: Lato;
@@ -206,90 +238,104 @@ font-weight: normal;
 font-size: 36px;
 line-height: 43px;
 letter-spacing: 0.25px;
-color: #FFFFFF;
+color: black;
 margin: 5px;
 }
-/* test */
-.backgroundTest{
+.headline5{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.25px;
+    color: black;
+    margin: 5px;
+    }
+.texto1{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: black;
+    margin: 5px;
+}
+/*MODAL DONACION*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; 
+    left: 25%;
+    top: 30%;
+    width: 50%; /* Full width */
+    height:auto; /* Full height */
+    overflow: auto; 
     background-image: url(../img/background3.png);
+    background-size: cover;
+    filter: drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.25));
+    padding: 2.5vh;
+    border-radius: 10px;
+  }
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
 }
-.test{
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 20px;
-letter-spacing: 0.5px;
-
-color: #000000;
-
+#plataDonacion{
+    width: fit-content;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
 }
-.sectionTest{
-    position: absolute;
-    top: 100px;
-    margin: 3%;
-    background-color: #FFFFFF;
-   
+#enviarDonacion{
+    width: fit-content;
+    background: #FDAE37;
+    border: #FDAE37;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    align-items: center;
+    justify-self: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color:white;
+    padding: 5px;    
 }
-.tipoMascota{
-    margin: 20px
+#enviarDonacion:hover,#enviarDonacion:focus{
+    width: fit-content;
+    background: #B09AD1;
+    border: #FDAE37;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    align-items: center;
+    justify-self: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color:white;
+    padding: 5px;    
 }
-.sexoMascota{
-    margin: 20px
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
-.edadMascota{
-    margin: 20px
-}
-.ciudadMascota{
-    margin: 20px
-}
-.buttonEnviar{
-align-self: center;
-width: 351px;
-height: 49.96px;
-background: #B09AD1;
-border: #B09AD1;
-border-radius: 7px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-align-items: center;
-justify-self: center;
-letter-spacing: 1.25px;
-text-transform: uppercase;
-color:white;
-margin: 5px;
-}
-.imgTest{
-width: 35%;
-height: auto;
- }
-.contentBox{
-display: flex;
-justify-items: center;
-justify-content: space-around;
-align-items: center;
-}
-.btnInfo{
-position: relative;
-margin-bottom: 3vh;
-width: 21vh;
-height: 20px;
-background-color: transparent;
-border: none;
-font-family: Montserrat;
-font-style: bold;
-font-weight: 400;
-font-size: 16px;
-line-height: 17px;
-align-items: center;
-justify-self: center;
-letter-spacing: 1.25px;
-text-transform: uppercase;
-color:white;
-}
-.cardbtn{
-    display: block;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
